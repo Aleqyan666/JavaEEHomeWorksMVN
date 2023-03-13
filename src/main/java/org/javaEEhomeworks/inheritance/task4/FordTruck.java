@@ -1,6 +1,5 @@
-package org.javaEEhomeworks.inheritance.tasks5_7;
+package org.javaEEhomeworks.inheritance.task4;
 
-import inheritance.task4.Truck;
 
 public class FordTruck extends Truck {
     public FordTruck(int passengerCount, char engineType, int capacity) {

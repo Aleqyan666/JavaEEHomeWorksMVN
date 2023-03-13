@@ -2,7 +2,8 @@ package org.javaEEhomeworks.enum_homework2.task6;
 
 import java.util.Scanner;
 
-import static enum_homework2.task6.Topping.*;
+
+import static org.javaEEhomeworks.enum_homework2.task6.Topping.*;
 
 public enum PizzaSize {
     SMALL(5.5), MEDIUM(7.5), LARGE(9.75);
@@ -22,13 +23,7 @@ public enum PizzaSize {
     }
 
 
-
-
-    /**
-     * calculate pizzas purchase
-     * @return the cost of pizza with toppings
-     */
-//    public static double purchasePizza(){
+    //    public static double purchasePizza(){
 //        if (sizeNumber == 0 ){
 //            paycheck +=  SMALL.getPRICE();
 //            System.out.println(paycheck);
