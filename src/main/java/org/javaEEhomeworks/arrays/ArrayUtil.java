@@ -19,20 +19,24 @@ public class ArrayUtil {
     /**
      * print the elements of the given array in reversed order
      */
-        public static void reverseElementsOrder(){
+        public int  reverseElementsOrder(){
             short []s = {2,5,2,10,18,85};
             for (int i = s.length-1; i >= 0; i--){
                 System.out.print(s[i] + " ");
             }
+            return s.length;
         }
 
     /**
      * returning largest element of the given array
+     *
+     * @return
      */
-        public static void printingLargestElement(){
+        public Throwable printingLargestElement(){
             long []L = new long[]{988,8228,81,18188,1188100,18};
             Arrays.sort(L);
             System.out.println(L[L.length-1]);
+            return null;
         }
 
     /**
@@ -49,7 +53,7 @@ public class ArrayUtil {
     /**
      * sum of elements of 2 arrays added in the 3rd array
      */
-    public static void gettingSumArray(){
+    public  boolean gettingSumArray(){
        int [] array1 = new int[]{1,5,6,4,7};
        int [] array2 = new int[]{7,4,2,3,5};
        int [] last = new int[10];
@@ -58,13 +62,14 @@ public class ArrayUtil {
            last[i] = array1[i] + array2[i];
            System.out.println(last[i]);
        }
+       return true;
     }
 
     /**
      * return how many times 'k' appeared in your array
      * @param k
      */
-    public static void countMatches(int k){
+    public int countMatches(int k){
         int [] theArray = new int[]{115,36,478,2548,6523,51,2363};
         int match = 0;
         for (int i = 0; i <= theArray.length-1; i++){
@@ -73,6 +78,7 @@ public class ArrayUtil {
             }
         }
         System.out.println(match);
+        return match;
     }
 
     /**
@@ -108,7 +114,7 @@ public class ArrayUtil {
     }
 
 
-    public static void removingZeroes(){
+    public  int removingZeroes(){
         int [] R  = new int[] {77,88,66,55,0,0,22,0,33,0,11,0,121,0,0};
         int [] serious = new int[R.length];
 
@@ -116,8 +122,10 @@ public class ArrayUtil {
             if (R[i] != 0){
                 serious[i] += R[i];
                 System.out.println(serious[i] + " /");
+                return serious[i];
             }
         }
+        return 0;
     }
 
     /**
@@ -250,12 +258,9 @@ public class ArrayUtil {
         longestIncrease();
         reverseAboveDiagonal();
         sumOfMatrix();
-        removingZeroes();
+    //    removingZeroes();
         sortEvenOdd();
         reverseOrderArray();
-        gettingSumArray();
-        reverseElementsOrder();
-        printingLargestElement();
         printingSmallestElement();
         decimalBinaryConversion();
     }

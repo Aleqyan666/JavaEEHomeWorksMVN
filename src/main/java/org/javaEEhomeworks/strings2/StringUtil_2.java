@@ -22,14 +22,16 @@ public class StringUtil_2 {
      * checking whether the word is palindrome
      * @param S
      */
-      void isPalindrome(String S) {
+      String isPalindrome(String S) {
         StringBuilder Builder = new StringBuilder(S);
         Builder.reverse();
         if (S.equals(Builder.toString())){
             System.out.println("it is palindrome");
+            return Builder.toString();
         }else{
             System.out.println("it is not palindrome");
         }
+        return "hi!";
      }
 
     /**
