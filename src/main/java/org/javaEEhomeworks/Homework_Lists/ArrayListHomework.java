@@ -89,8 +89,7 @@ public class ArrayListHomework {
         Collections.swap(nums2,0,1);
 
         //task8 / Write a Java program to test an array list is empty or not.
-        nums2.isEmpty();
-
+        System.out.println(nums2.isEmpty());
         //task9
         nums2.ensureCapacity(10);
 
