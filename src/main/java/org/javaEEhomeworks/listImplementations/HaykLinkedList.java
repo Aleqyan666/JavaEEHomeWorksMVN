@@ -1,5 +1,7 @@
 package org.javaEEhomeworks.listImplementations;
 
+import java.util.LinkedList;
+
 public class HaykLinkedList
 {
     //Class variables for the Linked List
