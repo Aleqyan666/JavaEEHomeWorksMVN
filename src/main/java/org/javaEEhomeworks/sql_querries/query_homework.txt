@@ -1,0 +1,35 @@
+1) SELECT AVG(to_number(cost, '999999.99'))
+FROM bookings;
+
+2)SELECT  origin, COUNT(*) AS "origin_count"
+ FROM flights
+ GROUP BY origin;
+
+3) SELECT  destination, COUNT(*) AS "destination_count"
+FROM flights
+GROUP BY destination;
+
+4) SELECT origin, COUNT(*) AS "count"
+FROM flights
+GROUP BY origin;
+
+5) SELECT b.origin, AVG(to_number(a.cost,'999999.99')) FROM
+Bookings a,
+Flights b
+WHERE a.flight_number = b.flight_number
+GROUP BY b.origin;
+
+6)SELECT COUNT(*), b.origin, AVG(to_number(a.cost,'999999.99')) FROM
+Bookings a,
+Flights b,
+Passengers c
+WHERE a.flight_number = b.flight_number AND c.passenger_id = a.passenger_id
+GROUP BY b.origin
+HAVING AVG(to_number(a.cost,'999999.99')) < 200;
+
+7) SELECT SUM(to_number(cost,'9999999.99')) AS "Total Revenue",
+to_char(booking_date, 'YYYY-MM') AS "Month"
+FROM bookings
+GROUP BY to_char(booking_date, 'YYYY-MM');
+
+8)
