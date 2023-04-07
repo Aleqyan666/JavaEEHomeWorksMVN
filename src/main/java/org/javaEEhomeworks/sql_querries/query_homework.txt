@@ -33,3 +33,19 @@ FROM bookings
 GROUP BY to_char(booking_date, 'YYYY-MM');
 
 8)
+
+9)SELECT
+  	a.destination,
+  	to_number(b.cost,'9999999.99999')
+  FROM Flights a, Bookings b
+  WHERE a.flight_number = b.booking_id
+  GROUP BY a.destination, b.cost
+  ORDER BY to_number(b.cost,'9999999.99999') DESC LIMIT 10;
+
+
+ 10)SELECT to_number(b.cost,'99999.99999') AS "COST", a.origin, a.destination
+    FROM
+    Flights a , Bookings b
+    GROUP BY a.origin, a.destination, to_number(b.cost,'99999.99999')
+    HAVING COUNT(origin) > 5
+    ORDER BY to_number(b.cost,'99999.99999') DESC;
