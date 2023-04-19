@@ -1,4 +1,4 @@
-package org.javaEEhomeworks.Homework_Lists.stack_exercise;
+package org.javaEEhomeworks.homework_lists.stack_exercise;
 
 import java.util.Stack;
 

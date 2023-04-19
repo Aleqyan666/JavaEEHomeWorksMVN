@@ -1,4 +1,4 @@
-package org.javaEEhomeworks.Homework_Lists;
+package org.javaEEhomeworks.homework_lists;
 
 import java.util.ArrayList;
 import java.util.List;
