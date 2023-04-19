@@ -91,9 +91,6 @@ public class Algorithms {
         generateRandomNumber(12);
 //        smallestAndLargest(11);
 
-
-
-
     }
 
 }
